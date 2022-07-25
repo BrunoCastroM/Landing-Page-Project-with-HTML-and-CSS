@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #384047;
+    --white-color: #ffffff;
+    --gap: 3rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +15,8 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color: var(--primary-color);
     
 }
 
@@ -49,12 +56,22 @@ h6 {
 }
 
 .main-bg {
-    background-image: url('../img/scattered-forcefields.svg');
+    background-image: url('../img/endless-constellation.svg');
     background-size: cover;
     background-position: center center;
+    color: var(--white-color)
+}
+
+.white-bg {
+    background: var(--white-color)
 }
 
 .main-content {
     max-width: 1200px;
-    margin: 0 aut;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.section {
+    min-height: 100vh;
 }
