@@ -18,25 +18,48 @@
 <body class="main-bg">
 
     <aside class="menu white-bg">
-        <section class="main-content menu-content">
+        <div class="main-content menu-content">
             <h1>
                 <a href="#">logo</a>
             </h1>
                 
             <nav>
                 <ul>
-                    <li><a href="#">Intro</a></li>
-                    <li><a href="#">Top3</a></li>
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#jobs">Jobs</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </aside>
 
-    <section class="section"></section>
-    <section class="section"></section>
+    <div class="menu-spacing"></div>
+
+    <section id="intro" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+            <h2>Basic content render</h2>
+            <p>Previously in this series, we created a new Hugo site and copied scaffold of the default theme to our layout folder. Now let's update our templates to have great HTML defaults. I would suggest reading the great article Basic HTML5 Template: Use This HTML Boilerplate as a Starter for Any Web Dev Project which dives a little deeper into this topic. But for our case, we will just base our default template on Vite's boilerplate template for Vue.</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/undraw_programmer_re_owql.svg" alt="Logo a woman programmer">
+            </div>
+        </div>
+    </section>
+
+    <section id="jobs" class="white-bg section">
+        <div class="main-content jobs-content">
+            <h2>Jobs for Foreigners in Portugal</h2>
+            <p>
+                Finding the right job can be complicated in any country, even in your country of origin. If you are thinking of moving to Portugal, or you already have — you might need to find work. The variety of jobs available to expats in Portugal varies vastly, dependant on your skills and the field you want to work in. This article will help you get an overview of jobs for foreigners in Portugal, and an idea of available work in Portugal.
+            </p>
+            <p>
+                Whether your a digital nomad looking for remote work, a student looking for some summer work or a permanent resident looking to embark on a career in Portugal, we advise wising up on some key facts on the job market in Portugal and the industries that are available to expats. Armed with some basic knowledge on jobs for foreigners in Portugal, you can make better and more informed decisions about work options in Portugal.
+            </p>
+        </div>
+    </section>
 
 </body>
 </html>

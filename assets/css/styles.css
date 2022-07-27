@@ -1,3 +1,32 @@
 /* color palettes: https://www.canva.com/colors/color-palettes/autumn-views/ */
 
 /* Backgound color: #3B4447  |  #404A4D  |  #4F4C3D */
+
+.intro-content {
+    position: relative;
+    top: -8rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.jobs-content {
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
