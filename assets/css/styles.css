@@ -2,6 +2,211 @@
 
 /* Backgound color: #3B4447  |  #404A4D  |  #4F4C3D */
 
+
+/* ----------------- Variables ----------------- */
+
+:root {
+    --primary-color: #3B4447;
+    --secundary-color: #C0955E;
+    --white-color: #ffffff;
+    --light-gray-color: #EEEEEE;
+    --placeholder-color: #6B7280;
+    --footer-color: #3B4447;
+    --gap: 3rem;
+}
+
+/* --------------------------------------------- */
+
+
+/* ----------------- Elements ----------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 6rem;
+    
+}
+
+h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 3rem;
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table {
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+table caption {
+    font-style: italic;
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+  
+table td, table th {
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color)
+}
+  
+tfoot td, table th {
+    background: var(--light-gray-color);
+} 
+
+/* ----------------------------------------- */
+
+
+/* ----------------- Class ----------------- */
+
+.main-bg {
+    background-image: url('../img/endless-constellation.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color)
+}
+
+.white-bg {
+    background: var(--white-color);
+    color: var(--primary-color)
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.menu-spacing {
+    height: 65px;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+/* ----------------------------------------- */
+
+
+/* ----------------- Menu ----------------- */
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+}
+
+.menu-content{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+
+.menu h1 a {
+    color: inherit;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--secundary-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+/* ----------------------------------------- */
+
+
 .intro-content {
     position: relative;
     display: grid;
